@@ -1,0 +1,24 @@
+﻿@model litedbTest.Models.customersViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-4">
+        
+    </div>
+    <div class="col-md-4">
+        @using (Html.BeginForm("saveCustomer", "db"))
+        {
+            @Html.TextBox("FirstName");
+            @Html.TextBox("LastName");
+     
+            <input value="Save" type="submit">
+        }
+    </div>
+    <div class="col-md-4">
+       
+    </div>
+</div>
